@@ -2,7 +2,6 @@ package tests;
 
 import org.junit.jupiter.api.Test;
 import screens.CreateAnAccountScreen;
-import screens.LoginScreen;
 import screens.MainScreen;
 
 import static com.codeborne.selenide.Selenide.back;
