@@ -15,7 +15,7 @@
 <img width="6%" title="IntelliJ IDEA" src="media/logo/Intelij_IDEA.svg">
 <img width="6%" title="Java" src="media/logo/Java.svg">
 <img width="6%" title="Selenide" src="media/logo/Selenide.svg">
-<img width="6%" title="Selenoid" src="media/logo/Selenoid.svg">
+<img width="6%" title="BrowserStack" src="media/logo/BrowserStack.svg">
 <img width="6%" title="Allure Report" src="media/logo/Allure_Report.svg">
 <img width="5%" title="Allure TestOps" src="media/logo/AllureTestOps.svg">
 <img width="6%" title="Gradle" src="media/logo/Gradle.svg">
@@ -25,8 +25,8 @@
 <img width="6%" title="Telegram" src="media/logo/Telegram.svg">
 </p>
 
-Тесты в данном проекте написаны на языке <code>Java</code> с использованием фреймворка для тестирования [Selenide](https://selenide.org/), сборщик - <code>Gradle</code>. <code>JUnit 5</code> задействован в качестве фреймворка модульного тестирования. Тесты содержат API и UI тесты.
-При прогоне тестов для запуска браузеров используется [Selenoid](https://selenoid.autotests.cloud).
+Тесты в данном проекте написаны на языке <code>Java</code> с использованием фреймворка для тестирования [Selenide](https://selenide.org/), сборщик - <code>Gradle</code>. <code>JUnit 5</code> задействован в качестве фреймворка модульного тестирования.
+При прогоне тестов для запуска тестов удаленно используется [BrowserStack](https://app-automate.browserstack.com/projects/First+Java+Project/builds).
 Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота. Так же реализована интеграция с <code>Allure TestOps</code>.
 
 **Особенности проекта**:
@@ -101,7 +101,7 @@ clean test -DdeviceHost=emulator
 <img width="70%" title="Telegram Notifications" src="media/screens/bot.jpg">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid
+### <img width="4%" style="vertical-align:middle" title="BrowserStack" src="media/logo/BrowserStack.svg"> Видео примера запуска тестов в BrowserStack
 
 В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
 <p align="center">
