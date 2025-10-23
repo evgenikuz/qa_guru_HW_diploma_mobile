@@ -22,6 +22,7 @@ public class BrowserstackDriver implements WebDriverProvider {
         AuthConfig authConfig = ConfigFactory.create(AuthConfig.class, System.getProperties());
         DeviceConfig deviceConfig = ConfigFactory.create(DeviceConfig.class, System.getProperties());
         TestConfig testConfig = ConfigFactory.create(TestConfig.class, System.getProperties());
+        String device = deviceConfig.getDevice();
 
         MutableCapabilities caps = new MutableCapabilities();
 
@@ -29,7 +30,7 @@ public class BrowserstackDriver implements WebDriverProvider {
         caps.setCapability("browserstack.key", authConfig.getKey());
 
         caps.setCapability("app", deviceConfig.getApp());
-        caps.setCapability("device", deviceConfig.getDevice());
+        caps.setCapability("device", device);
         caps.setCapability("os_version", deviceConfig.getVersion());
 
         caps.setCapability("project", testConfig.getProject());
