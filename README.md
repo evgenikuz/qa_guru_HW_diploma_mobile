@@ -95,6 +95,12 @@ clean test -DdeviceHost=browserstack
 
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> Пример <b><a target="_blank" href="https://jenkins.autotests.cloud/job/c36-evded-qa-guru-HW-diploma-mobile/4/allure/#">Allure-отчета</a></b>
 ### Overview
+Главная страница отчета Allure содержит следующие блоки:
+
+>- <code><strong>*ALLURE REPORT*</strong></code> - отображает дату и время теста, общее количество запущенных тестов, а также диаграмму с процентом и количеством успешных, упавших и сломавшихся в процессе выполнения тестов
+>- <code><strong>*TREND*</strong></code> - отображает тенденцию выполнения тестов для всех запусков
+>- <code><strong>*SUITES*</strong></code> - отображает распределение тестов по сьютам
+>- <code><strong>*CATEGORIES*</strong></code> - отображает распределение неудачных тестов по типам дефектов
 
 <p align="center">
 <img title="Allure Overview" src="media/screens/allure.png">
@@ -102,7 +108,13 @@ clean test -DdeviceHost=browserstack
 
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/AllureTestOps.svg"> Интеграция с <b><a target="_blank" href="https://allure.autotests.cloud/project/4965/dashboards">Allure TestOps</a></b>
 
-На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов: сколько из них добавлены и проходятся вручную, сколько автоматизированы. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
+Выполнена интеграция сборки <code>Jenkins</code> с <code>Allure TestOps</code>.
+Результат выполнения автотестов отображается в <code>Allure TestOps</code>
+На Dashboard в <code>Allure TestOps</code> отображена статистика пройденных тестов.
+
+Тест-кейсы в проекте импортируются и постоянно обновляются из кода,
+поэтому нет необходимости в синхронизации ручных тест-кейсов и автотестов.\
+Достаточно создать и обновить автотест в коде и тест-кейс всегда будет в актуальном состоянии.
 
 <p align="center">
 <img title="Allure TestOps DashBoard" src="media/screens/testops.png">
@@ -124,7 +136,7 @@ clean test -DdeviceHost=browserstack
 
 ### <img width="4%" style="vertical-align:middle" title="BrowserStack" src="media/logo/BrowserStack.svg"> Видео примера запуска тестов в BrowserStack
 
-В отчетах Allure для каждого теста прикреплено видео прохождения теста
+В отчете Allure прикреплено видео прохождения теста на мобильном устройстве
 <p align="center">
   <img title="Selenoid Video" src="media/video/tests.gif">
 </p>
