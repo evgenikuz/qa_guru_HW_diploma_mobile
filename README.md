@@ -1,4 +1,7 @@
-# Проект по автоматизации тестовых сценариев для приложения Wikipedia
+# Проект по автоматизации тестовых сценариев для приложения [Wikipedia](https://github.com/wikimedia/apps-android-wikipedia)
+
+<img width="500px" title="Wikipedia" src="media/logo/Wikipedia.png">
+
 ## :scroll: Содержание:
 
 - [Используемый стек](#computer-используемый-стек)
