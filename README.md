@@ -31,10 +31,6 @@
 <a href="https://web.telegram.org/"><img width="6%" title="Telegram" src="media/logo/Telegram.svg"></a>
 </p>
 
-Тесты в данном проекте написаны на языке <code>Java</code> с использованием фреймворка для тестирования [Selenide](https://selenide.org/), сборщик - <code>Gradle</code>. <code>JUnit 5</code> задействован в качестве фреймворка модульного тестирования.
-При прогоне тестов для запуска тестов удаленно используется [BrowserStack](https://app-automate.browserstack.com/projects/First+Java+Project/builds).
-Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота. Так же реализована интеграция с <code>Allure TestOps</code>.
-
 Автотесты в этом проекте написаны на `Java` с использованием фреймворка `Selenide`.\
 `Gradle` - используется как инструмент автоматизации сборки.  \
 `JUnit5` - для выполнения тестов.\
@@ -49,7 +45,7 @@
 - `Screen Object` шаблон проектирования
 - Различные конфигурации для запуска теста в зависимости от параметров сборки
 - Использование технологии `Owner`
-- Возможность запуска тестов: локально, удалённо, по тегам
+- Возможность запуска тестов локально или удалённо
 - Возможность запуска тестов напрямую из Allure TestOps
 - Автотесты как тестовая документация
 - Уведомление о результатах прохождения в Telegram
@@ -104,7 +100,23 @@ clean test -DdeviceHost=browserstack
 >- <code><strong>*CATEGORIES*</strong></code> - отображает распределение неудачных тестов по типам дефектов
 
 <p align="center">
-<img title="Allure Overview" src="media/screens/allure.png">
+<img title="Allure Overview" src="media/screens/allureMain.png">
+</p>
+
+### Список тестов с шагами и тестовыми артефактами
+На странице список тестов, сгруппированных по наборам, с указанием статуса для каждого теста.\
+Может быть показана полная информация о каждом тесте: теги, продолжительность, подробные шаги.
+
+<p align="center">
+  <img src="media/screens/allureSuits.png" alt="AllureSuites" width="750">
+</p>
+
+Также доступны дополнительные тестовые артефакты:
+>- Page Source
+>- Video
+
+<p align="center">
+<img title="Allure Attaches" src="media/screens/allureAttaches.png">
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/AllureTestOps.svg"> Интеграция с <b><a target="_blank" href="https://allure.autotests.cloud/project/4965/dashboards">Allure TestOps</a></b>
@@ -135,7 +147,7 @@ clean test -DdeviceHost=browserstack
 <img width="70%" title="Telegram Notifications" src="media/screens/bot.jpg">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="BrowserStack" src="media/logo/BrowserStack.svg"> Видео примера запуска тестов в BrowserStack
+### <img width="4%" style="vertical-align:middle" title="BrowserStack" src="media/logo/BrowserStack.svg"> Видео примера запуска тестов в <b><a target="_blank" href="https://app-automate.browserstack.com/projects/First+Java+Project/builds">BrowserStack</a></b>
 
 В отчете Allure прикреплено видео прохождения теста на мобильном устройстве
 <p align="center">
