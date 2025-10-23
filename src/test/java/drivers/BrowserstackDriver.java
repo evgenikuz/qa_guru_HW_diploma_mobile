@@ -38,7 +38,7 @@ public class BrowserstackDriver implements WebDriverProvider {
 
         try {
             return new RemoteWebDriver(
-                    new URL(testConfig.getUrl()), caps);
+                    new URL("https://" + testConfig.getUrl() + "/wd/hub"), caps);
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
