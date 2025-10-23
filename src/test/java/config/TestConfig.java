@@ -7,7 +7,7 @@ import org.aeonbits.owner.Config;
 })
 public interface TestConfig extends Config {
     @Key("url")
-    @DefaultValue("https://hub.browserstack.com/wd/hub")
+    @DefaultValue("hub.browserstack.com")
     String getUrl();
 
     @Key("project")

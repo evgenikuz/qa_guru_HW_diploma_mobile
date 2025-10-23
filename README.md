@@ -78,9 +78,12 @@ clean test
 ```
 Для удаленного запуска в эмуляторе <code>BrowserStack</code> в терминале IDE нужно ввести:
 ```
-clean test -DdeviceHost=browserstack
+clean test -DdeviceHost=browserstack -Dbrowserstack.user=${USER} -Dbrowserstack.key=${KEY}
 ```
-
+- `-DdeviceHost` - параметр, позволяющий выбрать запуск удаленно <code>browserstack</code> или локально <code>emulator</code>.
+- `-Dbrowserstack.user` - имя юзера в Browserstack.
+- `-Dbrowserstack.key` - пароль юзера в Browserstack.
+- `-Durl` - url хоста для удаленного запуска.
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> Сборка в <b><a target="_blank" href="https://jenkins.autotests.cloud/job/c36-evded-qa-guru-HW-diploma-mobile/">Jenkins</a></b>
 
