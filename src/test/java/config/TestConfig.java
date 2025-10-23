@@ -2,6 +2,9 @@ package config;
 
 import org.aeonbits.owner.Config;
 
+@Config.Sources({
+        "classpath:test.config"
+})
 public interface TestConfig extends Config {
     @Key("url")
     @DefaultValue("https://hub.browserstack.com/wd/hub")

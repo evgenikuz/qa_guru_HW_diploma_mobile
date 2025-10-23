@@ -2,6 +2,9 @@ package config;
 
 import org.aeonbits.owner.Config;
 
+@Config.Sources({
+        "classpath:test.config"
+})
 public interface DeviceConfig extends Config {
     @Key("device")
     @DefaultValue("Google Pixel 5")

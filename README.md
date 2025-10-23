@@ -72,15 +72,15 @@
 >- *browserstack* - для удаленного запуска
 
 ### Запуск тестов из терминала
+Для локального запуска тестов в терминале IDE нужно ввести:
 ```
 clean test
 ```
-При выполнении данной команды в терминале IDE тесты запустятся локально (значение по-умолчанию).
-
+Для удаленного запуска в эмуляторе <code>BrowserStack</code> в терминале IDE нужно ввести:
 ```
 clean test -DdeviceHost=browserstack
 ```
-При выполнении данной команды в терминале IDE тесты запустятся удаленно в эмуляторе <code>BrowserStack</code>.
+
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> Сборка в <b><a target="_blank" href="https://jenkins.autotests.cloud/job/c36-evded-qa-guru-HW-diploma-mobile/">Jenkins</a></b>
 

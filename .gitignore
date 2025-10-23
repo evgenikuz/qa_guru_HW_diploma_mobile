@@ -24,3 +24,6 @@ out/
 
 ### app ###
 apps/
+
+### Auth ###
+auth.properties
