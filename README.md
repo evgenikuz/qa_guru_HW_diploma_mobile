@@ -74,11 +74,11 @@
 ### Запуск тестов из терминала
 Для локального запуска тестов в терминале IDE нужно ввести:
 ```
-clean test
+gradle clean test
 ```
 Для удаленного запуска в эмуляторе <code>BrowserStack</code> в терминале IDE нужно ввести:
 ```
-clean test -DdeviceHost=browserstack -Dbrowserstack.user=${USER} -Dbrowserstack.key=${KEY}
+gradle clean test -DdeviceHost=browserstack -Dbrowserstack.user=${USER} -Dbrowserstack.key=${KEY}
 ```
 - `-DdeviceHost` - параметр, позволяющий выбрать запуск удаленно <code>browserstack</code> или локально <code>emulator</code>.
 - `-Dbrowserstack.user` - имя юзера в Browserstack.
