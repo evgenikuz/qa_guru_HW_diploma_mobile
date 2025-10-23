@@ -95,6 +95,7 @@ clean test -DdeviceHost=browserstack -Dbrowserstack.user=${USER} -Dbrowserstack.
 <p align="center">
 <img title="Jenkins Parameters" src="media/screens/jenkinsParams.png" width="750">
 </p>
+
 После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 <p align="center">
 <img title="Jenkins Build" src="media/screens/jenkins.png" width="750">
