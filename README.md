@@ -1,6 +1,8 @@
 # Проект по автоматизации тестовых сценариев для приложения [Wikipedia](https://github.com/wikimedia/apps-android-wikipedia)
 
+<div align="center">
 <img width="500px" title="Wikipedia" src="media/logo/Wikipedia.png">
+</div>
 
 ## :scroll: Содержание:
 
