@@ -164,7 +164,7 @@ gradle clean test -DdeviceHost=browserstack -Dbrowserstack.user=${USER} -Dbrowse
 <img width="70%" title="Telegram Notifications" src="media/screens/bot.jpg">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="BrowserStack" src="media/logo/BrowserStack.svg"> Видео примера запуска тестов в <b><a target="_blank" href="https://app-automate.browserstack.com/projects/First+Java+Project/builds">BrowserStack</a></b>
+### <img width="4%" style="vertical-align:middle" title="BrowserStack" src="media/logo/BrowserStack.svg"> Видео примера запуска тестов в <b><a target="_blank" href="https://app-automate.browserstack.com/projects/Diploma+Java+Project/builds">BrowserStack</a></b>
 
 В отчете Allure прикреплено видео прохождения теста на мобильном устройстве
 <p align="center">
