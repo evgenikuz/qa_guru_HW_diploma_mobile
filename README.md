@@ -73,19 +73,28 @@
 >- *browserstack* - для удаленного запуска
 
 ### Запуск тестов из терминала
-Для локального запуска тестов в терминале IDE нужно ввести:
+В папке resources локально можно создать файл auth.properties со следующим содержимым:
 ```
-gradle clean test
+browserstack.user=${USER}
+browserstack.key=${KEY}
 ```
-Для удаленного запуска в эмуляторе <code>BrowserStack</code> в терминале IDE нужно ввести:
-```
-gradle clean test -DdeviceHost=browserstack -Dbrowserstack.user=${USER} -Dbrowserstack.key=${KEY}
-```
-- `-DdeviceHost` - параметр, позволяющий выбрать запуск удаленно <code>browserstack</code> или локально <code>emulator</code>.
 - `-Dbrowserstack.user` - имя юзера в Browserstack.
 - `-Dbrowserstack.key` - пароль юзера в Browserstack.
 
-Можно добавить параметры:
+После этого для локального запуска тестов в терминале IDE нужно ввести:
+```
+gradle clean test
+```
+Если файл auth.properties не был создан, то к скрипту нужно добавить `-Dbrowserstack.user=${USER} -Dbrowserstack.key=${KEY}`.
+
+Для удаленного запуска в эмуляторе <code>BrowserStack</code> в терминале IDE нужно ввести:
+```
+gradle clean test -DdeviceHost=browserstack
+```
+- `-DdeviceHost` - параметр, позволяющий выбрать запуск удаленно <code>browserstack</code> или локально <code>emulator</code>.
+  Если файл auth.properties не был создан, то к скрипту нужно добавить `-Dbrowserstack.user=${USER} -Dbrowserstack.key=${KEY}`.
+
+Также можно добавить параметры:
 - `-Durl` - url хоста для удаленного запуска.
 - `-Dversion` - версия Android
 - `-Ddevice` - модель устройства на базе Android
