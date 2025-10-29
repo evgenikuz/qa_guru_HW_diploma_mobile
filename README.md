@@ -78,8 +78,8 @@
 browserstack.user=${USER}
 browserstack.key=${KEY}
 ```
-- `-Dbrowserstack.user` - имя юзера в Browserstack.
-- `-Dbrowserstack.key` - пароль юзера в Browserstack.
+- `${USER}` - имя юзера в Browserstack.
+- `${KEY}` - пароль юзера в Browserstack.
 
 После этого для локального запуска тестов в терминале IDE нужно ввести:
 ```
