@@ -1,13 +1,13 @@
 package screens;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.className;
 import static io.appium.java_client.AppiumBy.id;
-import static io.qameta.allure.Allure.step;
 
 public class LoginScreen {
     private static final SelenideElement loginButton = $(id("org.wikipedia.alpha:id/login_button")),
@@ -16,33 +16,29 @@ public class LoginScreen {
             captcha = $(id("org.wikipedia.alpha:id/captcha_text")),
             captchaError = $(id("org.wikipedia.alpha:id/textinput_error"));
 
+    @Step("Enter username")
     public LoginScreen insertUsername(String username) {
-        step("Enter username", () -> {
-            usernameInput.sendKeys(username);
-        });
+        usernameInput.sendKeys(username);
         return this;
     }
 
+    @Step("Enter username")
     public LoginScreen insertPassword(String password) {
-        step("Enter username", () -> {
-            passwordInput.sendKeys(password);
-        });
+        passwordInput.sendKeys(password);
         return this;
     }
 
+    @Step("Click on Log in button")
     public LoginScreen clickLoginButton() {
-        step("Click on Log in button", () -> {
-            loginButton.click();
-            captcha.shouldBe(visible);
-        });
+        loginButton.click();
+        captcha.shouldBe(visible);
         return this;
     }
 
+    @Step("Check captcha is required")
     public LoginScreen checkCaptchaError() {
-        step("Check captcha is required", () -> {
-            loginButton.click();
-            captchaError.shouldHave(text("Repeat words from above"));
-        });
+        loginButton.click();
+        captchaError.shouldHave(text("Repeat words from above"));
         return this;
     }
 }
